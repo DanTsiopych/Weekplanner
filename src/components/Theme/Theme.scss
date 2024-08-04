@@ -1,0 +1,48 @@
+.switcher-button {
+    background-color: #83d8ff;
+    border-radius: 84px;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 72px;
+    margin-top: 5px;
+
+    @media (max-width: 450px) {
+        width: 50px;
+        height: 25px;
+    }
+}
+
+.switcher-button.active {
+    background-color: #749dd6;
+}
+
+.switcher {
+    background-color: #ffcf96;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px #0000004d;
+    display: inline-block;
+    height: 25px;
+    left: 3px;
+    position: relative;
+    top: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 25px;
+    z-index: 1;
+
+     @media (max-width: 450px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.switcher.active {
+    background-color: #ffe5b5;
+    transform: translate3d(40px, 0, 0) rotate(0);
+      @media (max-width: 450px) {
+          transform: translate3d(25px, 0, 0) rotate(0);
+    }
+}

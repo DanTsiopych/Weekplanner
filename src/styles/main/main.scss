@@ -1,0 +1,43 @@
+@use '../base/fonts.scss';
+
+@use "../vendor/reset.scss";
+
+:root {
+    --bgColor-light: #f8fbff;
+    --bgColor-dark: #0b2447;
+    --cardBgColor-light: #eff4ff;
+    --cardBgColor-dark: #19376d;
+    --titleColor-dark: #576cbc;
+    --titleColor-light: #3a5a79;
+    --mainColor-light: #3a5a79;
+    --mainColor-dark: #a5d7e8;
+}
+
+[data-theme="light"] {
+    --bgColor: var(--bgColor-light);
+    --cardBgColor: var(--cardBgColor-light);
+    --titleColor: var(--titleColor-light);
+    --mainColor: var(--mainColor-light);
+}
+
+[data-theme="dark"] {
+    --bgColor: var(--bgColor-dark);
+    --cardBgColor: var(--cardBgColor-dark);
+    --titleColor: var(--titleColor-dark);
+    --mainColor: var(--mainColor-dark);
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+.wrapper {
+    min-width: 100%;
+    height: 100vh;
+    position: inherit;
+}
+
+.container {
+    max-width: 100%;
+    padding: 15px;
+}

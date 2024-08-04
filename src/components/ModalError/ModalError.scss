@@ -1,0 +1,71 @@
+.module-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+  
+}
+
+.module-wrapper.disabled {
+    display: none;
+}
+
+.module {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    max-width: 400px;
+    height: auto;
+
+    padding: 50px;
+    gap: 30px;
+
+    background-color: var(--cardBgColor);
+    border: 2px solid var(--mainColor);
+    border-radius: 20px;
+    color: var(--titleColor);
+
+    font-size: 30px;
+    cursor: default;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+}
+
+.modal-image {
+    max-width: 100%;
+}
+
+.error-message-1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.error-message-2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.button-cancel {
+    background-color: #5656e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 10px;
+    justify-content: center;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    width: 70%;
+}

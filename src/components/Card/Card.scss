@@ -1,0 +1,99 @@
+@use "../../styles/main/main.scss";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    background-color: var(--cardBgColor);
+    border-radius: 10px;
+    box-shadow: 1px 9px 27px -8px #0000004d;
+    -webkit-box-shadow: 1px 9px 27px -8px #0000004d;
+    -moz-box-shadow: 1px 9px 27px -8px #0000004d;
+    height: 100%;
+    padding: 5px 10px 15px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.card-title {
+    color: var(--titleColor);
+    font-size: 30px;
+    margin: 15px 0px 20px 0px;
+}
+
+.tasks {
+    background-color: initial;
+    border: 1px solid #0000004d;
+    border-radius: 30px;
+    color: var(--mainColor);
+    font-size: 18px;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 3;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    background-color: #5656e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 10px;
+    justify-content: center;
+    padding: 6px 10px;
+    margin: 15px;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.addButton img {
+    width: 15px;
+    height: 15px;
+}
+
+.taskExisting {
+    opacity: 0.6;
+    color: var(--titleColor);
+}
+
+.listOfTasks {
+    min-width: 100%;
+}
+
+.tasksFeatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resetAll {
+    background-color: #5656e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.tasksProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasksProgress span {
+    color: var(--titleColor);
+    font-size: 20px;
+    font-weight: 400;
+}

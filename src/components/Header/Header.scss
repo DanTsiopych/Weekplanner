@@ -1,0 +1,20 @@
+@use '../../styles/main/main.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.header-title {
+    color: var(--titleColor);
+    font-size: 38px;  
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 286px;
+}
+
+

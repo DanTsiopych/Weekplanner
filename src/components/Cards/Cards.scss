@@ -1,0 +1,13 @@
+.cards {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(4,  auto);
+    gap: 40px;
+
+    @media (max-width: 1150px) {
+         grid-template: repeat(4, auto) / repeat(2, auto);
+    }
+    
+    @media (max-width: 600px) {
+         grid-template: repeat(8, auto) / repeat(1, auto);
+    }
+}

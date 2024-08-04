@@ -1,0 +1,9 @@
+@use "./../../styles/base/fonts.scss";
+
+.timer {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    opacity: 0.6;
+    color: var(--titleColor);
+    padding: 5px 0px 0px 0px;
+}

@@ -1,0 +1,74 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dde8fc;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -22%;
+    z-index: 20;
+    animation: notification 1.35s linear 2;   
+}
+
+.notification.disabled {
+    display: none;
+}
+
+.bell-img {
+    width: 40px;
+    height: 40px;
+    animation: bell 1.15s linear 2;
+}
+
+.notification-text {
+    text-align: center;
+}
+
+.notification-text h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.notification-text p {
+    font-size: 12px;
+}
+
+@keyframes notification {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.85);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bell {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
